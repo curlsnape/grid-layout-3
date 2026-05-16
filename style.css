@@ -1,9 +1,30 @@
+@font-face {
+    font-family: bold;
+    src: url(./assets/fonts/ClashDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: semibold;
+    src: url(./assets/fonts/ClashDisplay-Semibold.otf);
+}
+
+@font-face {
+    font-family: light;
+    src: url(./assets/fonts/ClashDisplay-Regular.otf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(./assets/fonts/ClashDisplay-Medium.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Estedad;
+    font-family: light;
 }
+
 
 html,
 body {
@@ -15,13 +36,12 @@ body {
 main {
     height: 100%;
     width: 100%;
-
     display: grid;
-    gap: 30px;
+    gap: 20px;
     padding: 15px;
 
     grid-template-rows: 10fr 50fr 30fr;
-    grid-template-columns: 5fr 35fr 20fr 25fr 15fr;
+    grid-template-columns: 3fr 37fr 20fr 25fr 15fr;
 
     grid-template-areas:
         "sideleft left top-center top-center top-center"
@@ -128,6 +148,7 @@ main {
 }
 
 .content h1 {
+    font-family: semibold;
     font-size: 5rem;
     line-height: .9;
     font-weight: 600;
@@ -215,10 +236,11 @@ main {
 }
 
 .top-center h1 {
-    font-size: 13vw;
+    font-size: 12vw;
+    font-family: bold;
     letter-spacing: 0.4vw;
-    font-weight: 700;
-    line-height: 0.9;
+    font-weight: 600;
+    line-height: 0.8;
 }
 
 .content {
@@ -311,7 +333,7 @@ main {
 
 }
 
-.right-bottom .left {
+.right-bottom .leftb {
     width: 50%;
     background-color: black;
     border-radius: 0%;
@@ -387,13 +409,13 @@ h5 {
     align-items: start;
 }
 
-.right-bottom .left {
+.right-bottom .leftb {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right-bottom .left img {
+.right-bottom .leftb img {
     height: 150px;
     width: 150px;
     object-fit: cover;
