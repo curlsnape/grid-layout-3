@@ -61,7 +61,6 @@ main {
     grid-area: left;
     position: relative;
     overflow: hidden;
-    border: 1px solid #bdbee6;
     background: linear-gradient(#8184D2, #898cdf);
     border-radius: 25px;
     min-height: 100%;
@@ -71,30 +70,33 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 160px;
-    height: 55px;
-    background: #F4F1EB;
-    color: #333;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    font-weight: 600;
-    border-bottom-right-radius: 150px;
     z-index: 10;
 }
 
-
-.about-tag::after {
-    content: "";
-    position: absolute;
-    right: -30px;
-    top: 0;
+.about-pill {
+    background: #F4F1EB;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.about-pill img{
+    height: 20px;
+    object-fit: cover;
+}
+.about-triangle {
     width: 40px;
-    height: 40px;
-    background: transparent;
-    border-top-left-radius: 40px;
-    box-shadow: -15px -15px 0 #F4F1EB;
+    height: 41px;
+    background: #F4F1EB;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    margin-left: -1px;
+
 }
 
 .ring {
