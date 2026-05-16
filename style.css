@@ -95,7 +95,7 @@ main {
 .about-triangle {
     width: 40px;
     height: 39px;
-    background: #F4F1EB;
+    background: #fff;
     clip-path: polygon(0 0, 100% 0, 0 100%);
     margin-left: -1px;
     margin-top: -1px;
